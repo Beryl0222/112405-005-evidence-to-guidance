@@ -14,6 +14,41 @@
       "id": "AB-9",
       "text": "编辑通知：AB-7 表格 2 的组别标签有误，期刊发布更正。",
       "kind": "correction"
+    },
+    {
+      "id": "AB-20",
+      "kind": "methods",
+      "text": "AB7试验TR1：60岁以上且基线指标偏高，甲方案比常规照护，替代指标为12周检测值；未收集住院结局，未纳入年轻人。"
+    },
+    {
+      "id": "AB-21",
+      "kind": "methods",
+      "text": "AB8是TR1同一批人的24周随访，不是新招募或独立试验。"
+    },
+    {
+      "id": "AB-22",
+      "kind": "correction-details",
+      "text": "AB9更正：AB7表2中干预组和对照组标签交换，数值本身未换；摘要的下降方向待作者重新确认。"
+    },
+    {
+      "id": "AB-23",
+      "kind": "independent-study",
+      "text": "TR2纳入18-40岁低风险者，乙方案对照安慰剂；样本量有限，未发现替代指标差异，未检验等效性。"
+    },
+    {
+      "id": "AB-24",
+      "kind": "meeting-note",
+      "text": "顾问甲认为AB7可支持全龄住院预防，顾问乙指出未测住院且人群限定。两者均为讨论意见，未签为建议。"
+    },
+    {
+      "id": "AB-25",
+      "kind": "guidance-record",
+      "text": "G3在十月一日发布，适用60岁以上人群，正文称可降低住院风险，引用AB7；G4只讨论乙方案证据不足，引用AB23。"
+    },
+    {
+      "id": "AB-26",
+      "kind": "retraction",
+      "text": "期刊十月十日撤回AB8的随访分析，不撤回AB7原试验；AB7的表格更正仍有效。"
     }
   ],
   "guidance": [
@@ -22,5 +57,40 @@
       "text": "高龄人群可考虑甲方案降低住院风险。"
     }
   ],
-  "case_id": "evidence-7"
+  "case_id": "evidence-7",
+  "context": {
+    "studies": [
+      {
+        "id": "TR1",
+        "papers": [
+          "AB-7",
+          "AB-8"
+        ]
+      },
+      {
+        "id": "TR2",
+        "papers": [
+          "AB-23"
+        ]
+      }
+    ],
+    "published_guidance": [
+      {
+        "id": "G3",
+        "state": "published",
+        "source": "AB-25",
+        "references": [
+          "AB-7"
+        ]
+      },
+      {
+        "id": "G4",
+        "state": "published",
+        "source": "AB-25",
+        "references": [
+          "AB-23"
+        ]
+      }
+    ]
+  }
 }
