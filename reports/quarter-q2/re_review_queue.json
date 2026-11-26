@@ -1,0 +1,24 @@
+[
+  {
+    "guidance_id": "GQ-1",
+    "suggested_action": "reopen",
+    "review_priority": "high",
+    "triggers": [
+      "source_corrected"
+    ],
+    "independent_study_count": 1,
+    "trial_ids": [
+      "Q1-1"
+    ],
+    "member_record_ids": [
+      "Q1-1",
+      "Q1-2"
+    ],
+    "dossier_record_ids": [
+      "Q2-C"
+    ],
+    "top_reasons_zh": [
+      "Q1-1（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。"
+    ]
+  }
+]

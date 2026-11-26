@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "case_id": "quarter-q2",
+  "disclaimer": "本结果基于虚构合成文本生成，仅用于流程演练，不构成任何真实医疗建议。",
+  "records": [
+    {
+      "id": "Q1-1",
+      "kind": "abstract",
+      "kind_normalized": "abstract",
+      "source": null,
+      "date": null,
+      "trial_id": "Q1-1",
+      "status": "corrected",
+      "text": "一项虚构社区随机试验显示，在 60–75 岁社区居民中，健身操方案与常规活动相比使一年内跌倒发生率下降。"
+    },
+    {
+      "id": "Q1-2",
+      "kind": "follow-up-paper",
+      "kind_normalized": "follow_up",
+      "source": null,
+      "date": null,
+      "trial_id": "Q1-1",
+      "status": "active",
+      "text": "Q1-1 同一试验的 12 个月延长随访分析，纳入人群与对照不变，跌倒方向与主分析一致。"
+    },
+    {
+      "id": "Q2-1",
+      "kind": "abstract",
+      "kind_normalized": "abstract",
+      "source": null,
+      "date": null,
+      "trial_id": "Q2-1",
+      "status": "active",
+      "text": "另一项虚构试验在 75 岁以上老人中检验健身操方案，对住院率的影响与对照组相比未发现显著差异；研究者称证据不足，不能得出有效结论。"
+    },
+    {
+      "id": "Q2-C",
+      "kind": "correction",
+      "kind_normalized": "correction",
+      "source": null,
+      "date": null,
+      "trial_id": "Q2-C",
+      "status": "active",
+      "text": "更正通知：Q1-1 的跌倒统计口径有误，期刊发布更正，效应量可能调整。"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "Q1-1#C1",
+      "record_id": "Q1-1",
+      "claim_type": "result",
+      "source_sentence": "一项虚构社区随机试验显示，在 60–75 岁社区居民中，健身操方案与常规活动相比使一年内跌倒发生率下降。",
+      "source_clause": "一项虚构社区随机试验显示，在 60–75 岁社区居民中，健身操方案与常规活动相比使一年内跌倒发生率下降。",
+      "population": "60–75岁社区居民",
+      "population_qualifiers": [
+        {
+          "type": "age_range",
+          "min_age": 60,
+          "max_age": 75,
+          "raw": "60–75岁"
+        }
+      ],
+      "intervention": "健身操方案",
+      "comparator": "常规活动",
+      "comparator_status": "comparison_phrase",
+      "outcome": "一年内跌倒发生率",
+      "outcome_concept": "fall",
+      "outcome_class": "patient_important",
+      "direction": "favorable",
+      "evidential_force": "supports_benefit_claim",
+      "direction_note": "有害/偏高指标下降按有利方向解读",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "verb": "下降"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    },
+    {
+      "claim_id": "Q2-1#C1",
+      "record_id": "Q2-1",
+      "claim_type": "result",
+      "source_sentence": "另一项虚构试验在 75 岁以上老人中检验健身操方案，对住院率的影响与对照组相比未发现显著差异；研究者称证据不足，不能得出有效结论。",
+      "source_clause": "另一项虚构试验在 75 岁以上老人中检验健身操方案，对住院率的影响与对照组相比未发现显著差异；",
+      "population": "75岁以上老人",
+      "population_qualifiers": [
+        {
+          "type": "min_age",
+          "min_age": 75,
+          "raw": "75岁以上"
+        }
+      ],
+      "intervention": "中检验健身操方案",
+      "comparator": "对照组",
+      "comparator_status": "comparison_phrase",
+      "outcome": "住院率",
+      "outcome_concept": "hospitalization",
+      "outcome_class": "patient_important",
+      "direction": "no_significant_difference",
+      "evidential_force": "inconclusive_no_detected_difference",
+      "direction_note": "原文为未检出差异/证据不足：不能支持阳性功效，也不能改写为“证明无效”",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "null_phrase": "未发现显著差异"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    },
+    {
+      "claim_id": "Q2-1#C2",
+      "record_id": "Q2-1",
+      "claim_type": "result",
+      "source_sentence": "另一项虚构试验在 75 岁以上老人中检验健身操方案，对住院率的影响与对照组相比未发现显著差异；研究者称证据不足，不能得出有效结论。",
+      "source_clause": "研究者称证据不足，不能得出有效结论。",
+      "population": "75岁以上老人",
+      "population_qualifiers": [
+        {
+          "type": "min_age",
+          "min_age": 75,
+          "raw": "75岁以上"
+        }
+      ],
+      "intervention": "中检验健身操方案",
+      "comparator": "对照组",
+      "comparator_status": "comparison_phrase",
+      "outcome": null,
+      "outcome_concept": null,
+      "outcome_class": "unknown",
+      "direction": "no_significant_difference",
+      "evidential_force": "inconclusive_no_detected_difference",
+      "direction_note": "原文为未检出差异/证据不足：不能支持阳性功效，也不能改写为“证明无效”",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 1,
+        "null_phrase": "证据不足"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": "Q1-1",
+      "primary_record_id": "Q1-1",
+      "member_record_ids": [
+        "Q1-1",
+        "Q1-2"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": true
+    },
+    {
+      "trial_id": "Q2-1",
+      "primary_record_id": "Q2-1",
+      "member_record_ids": [
+        "Q2-1"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": false
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "Q1-2",
+      "target_id": "Q1-1",
+      "relation_type": "follow_up_of",
+      "basis": "text_or_kind",
+      "evidence_sentence": "Q1-1 同一试验的 12 个月延长随访分析，纳入人群与对照不变，跌倒方向与主分析一致。",
+      "confidence": "high",
+      "target_known": true
+    },
+    {
+      "source_id": "Q2-C",
+      "target_id": "Q1-1",
+      "relation_type": "corrects",
+      "basis": "text_or_kind",
+      "evidence_sentence": "更正通知：Q1-1 的跌倒统计口径有误，期刊发布更正，效应量可能调整。",
+      "confidence": "high",
+      "target_known": true
+    }
+  ],
+  "status_events": [
+    {
+      "record_id": "Q1-1",
+      "from_status": "active",
+      "to_status": "corrected",
+      "caused_by": "Q2-C",
+      "relation_type": "corrects",
+      "evidence_sentence": "更正通知：Q1-1 的跌倒统计口径有误，期刊发布更正，效应量可能调整。"
+    }
+  ],
+  "guidance_reviews": [
+    {
+      "guidance_id": "GQ-1",
+      "guidance_text": "推荐 60–75 岁社区居民练习健身操以降低跌倒风险。",
+      "parsed": {
+        "population": "60–75岁社区居民",
+        "population_qualifiers": [
+          {
+            "type": "age_range",
+            "min_age": 60,
+            "max_age": 75,
+            "raw": "60–75岁"
+          }
+        ],
+        "intervention": null,
+        "outcome": "跌倒风险",
+        "outcome_concept": "fall",
+        "outcome_class": "patient_important",
+        "desired_direction": "decrease",
+        "strength": "strong"
+      },
+      "suggested_action": "reopen",
+      "suggested_action_zh": "重新讨论（必须重审）",
+      "needs_review": true,
+      "review_priority": "high",
+      "reasons": [
+        {
+          "code": "source_corrected",
+          "severity": "warn",
+          "message_zh": "Q1-1（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。"
+        }
+      ],
+      "checks": [
+        {
+          "code": "source_corrected",
+          "status": "warn",
+          "title_zh": "支持研究已被更正",
+          "detail_zh": "Q1-1（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。",
+          "impacted_records": [
+            [
+              "Q1-1",
+              "corrected"
+            ]
+          ]
+        },
+        {
+          "code": "independent_study_count",
+          "status": "info",
+          "title_zh": "独立研究计数",
+          "detail_zh": "回查到 2 条记录，归并为 1 项独立试验（Q1-1）。 其中 Q1-2 是同一试验的后续/随访分析，不能算作第二项独立研究。",
+          "record_count": 2,
+          "independent_trial_count": 1,
+          "trial_ids": [
+            "Q1-1"
+          ],
+          "follow_up_records": [
+            "Q1-2"
+          ]
+        },
+        {
+          "code": "intervention_match",
+          "status": "pass",
+          "title_zh": "干预措施一致",
+          "detail_zh": "建议干预“（建议使用简称，已按证据干预核心名匹配）”与证据干预 ['健身操方案'] 可对应。"
+        },
+        {
+          "code": "population_applicability",
+          "status": "pass",
+          "title_zh": "人群范围可对应",
+          "detail_zh": "建议人群与证据纳入人群未发现额外限定冲突。",
+          "comparison": {
+            "aligned": true,
+            "gaps": [],
+            "evidence_populations": [
+              "60–75岁社区居民"
+            ],
+            "evidence_min_age": 60,
+            "evidence_max_age": 75,
+            "evidence_age_range": "60-75岁",
+            "extra_conditions": []
+          }
+        },
+        {
+          "code": "comparator_documented",
+          "status": "pass",
+          "title_zh": "比较条件已保留",
+          "detail_zh": "证据中的比较条件：常规活动"
+        },
+        {
+          "code": "outcome_direct_evidence",
+          "status": "pass",
+          "title_zh": "存在同一结局的直接证据",
+          "detail_zh": "找到 1 条方向为有利的同结局主张。",
+          "claim_ids": [
+            "Q1-1#C1"
+          ]
+        }
+      ],
+      "trace": {
+        "match_method": "intervention_text_match",
+        "seed_record_ids": [
+          "Q1-1"
+        ],
+        "trial_ids": [
+          "Q1-1"
+        ],
+        "member_record_ids": [
+          "Q1-1",
+          "Q1-2"
+        ],
+        "dossier_record_ids": [
+          "Q2-C"
+        ],
+        "independent_study_count": 1,
+        "paths": [
+          {
+            "from": "GQ-1",
+            "to": "Q1-1",
+            "via": "建议与主张对应同一干预“健身操方案”（允许核心简称匹配）"
+          },
+          {
+            "from": "Q1-2",
+            "to": "Q1-1",
+            "via": "follow_up_of：Q1-1同一试验的12个月延长随访分析，纳入人群与对照不变，跌倒方向与主分析一致。",
+            "relation_type": "follow_up_of"
+          },
+          {
+            "from": "Q2-C",
+            "to": "Q1-1",
+            "via": "corrects：更正通知：Q1-1的跌倒统计口径有误，期刊发布更正，效应量可能调整。",
+            "relation_type": "corrects"
+          }
+        ]
+      },
+      "supporting_studies": [
+        {
+          "trial_id": "Q1-1",
+          "primary_record_id": "Q1-1",
+          "record_ids": [
+            "Q1-1",
+            "Q1-2"
+          ],
+          "independent_study_count": 1,
+          "status": "corrected",
+          "claim_ids": [
+            "Q1-1#C1"
+          ]
+        }
+      ],
+      "suggested_revision": null
+    }
+  ],
+  "re_review_queue": [
+    {
+      "guidance_id": "GQ-1",
+      "suggested_action": "reopen",
+      "review_priority": "high",
+      "triggers": [
+        "source_corrected"
+      ],
+      "independent_study_count": 1,
+      "trial_ids": [
+        "Q1-1"
+      ],
+      "member_record_ids": [
+        "Q1-1",
+        "Q1-2"
+      ],
+      "dossier_record_ids": [
+        "Q2-C"
+      ],
+      "top_reasons_zh": [
+        "Q1-1（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。"
+      ]
+    }
+  ],
+  "wording_issues": [],
+  "input_warnings": [],
+  "stats": {
+    "record_count": 4,
+    "claim_count": 3,
+    "trial_count": 2,
+    "independent_study_count_total": 2,
+    "guidance_count": 1,
+    "guidance_action_counts": {
+      "maintain": 0,
+      "narrow": 0,
+      "reopen": 1
+    },
+    "re_review_queue_size": 1,
+    "wording_issue_count": 0,
+    "unverified_source_sentences": []
+  }
+}

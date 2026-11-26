@@ -1,0 +1,1005 @@
+{
+  "schema_version": "1.0",
+  "case_id": "quarter-demo",
+  "disclaimer": "本结果基于虚构合成文本生成，仅用于流程演练，不构成任何真实医疗建议。",
+  "records": [
+    {
+      "id": "PA-2",
+      "kind": "abstract",
+      "kind_normalized": "abstract",
+      "source": null,
+      "date": null,
+      "trial_id": "PA-2",
+      "status": "active",
+      "text": "一项虚构随机试验显示，在 50–75 岁确诊冠心病的患者中，丙方案与常规治疗相比使一年内心肌梗死发生率下降。"
+    },
+    {
+      "id": "NB-1",
+      "kind": "abstract",
+      "kind_normalized": "abstract",
+      "source": null,
+      "date": null,
+      "trial_id": "NB-1",
+      "status": "active",
+      "text": "在 18–40 岁轻度痤疮患者中，丁凝胶 0.1% 每日一次治疗 12 周可显著减少皮损数量。"
+    },
+    {
+      "id": "NB-M1",
+      "kind": "methods-supplement",
+      "kind_normalized": "methods",
+      "source": null,
+      "date": null,
+      "trial_id": "NB-M1",
+      "status": "active",
+      "text": "NB-1 的方法补充：纳入标准限定为 18–40 岁、轻度痤疮；丁凝胶剂量限定为 0.1% 每日一次，疗程 12 周。"
+    },
+    {
+      "id": "NL-1",
+      "kind": "abstract",
+      "kind_normalized": "abstract",
+      "source": null,
+      "date": null,
+      "trial_id": "NL-1",
+      "status": "active",
+      "text": "在 70 岁以上衰弱老人中，戊补充剂对认知评分的影响与安慰剂相比未发现显著差异。"
+    },
+    {
+      "id": "NL-N1",
+      "kind": "meeting-note",
+      "kind_normalized": "meeting_note",
+      "source": null,
+      "date": null,
+      "trial_id": "NL-N1",
+      "status": "active",
+      "text": "NL-1 会议批注：有人提出“既然未发现差异，就说明戊补充剂无效，应从所有建议中删除”；该表述需按证据规则复核。"
+    },
+    {
+      "id": "RT-1",
+      "kind": "paper",
+      "kind_normalized": "paper",
+      "source": null,
+      "date": null,
+      "trial_id": "RT-1",
+      "status": "retracted",
+      "text": "己疫苗使 65 岁以上人群流感住院率下降。"
+    },
+    {
+      "id": "RT-2",
+      "kind": "retraction",
+      "kind_normalized": "retraction",
+      "source": null,
+      "date": null,
+      "trial_id": "RT-2",
+      "status": "active",
+      "text": "撤稿声明：RT-1 因数据不可靠被期刊撤回，结论不再有效。"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "PA-2#C1",
+      "record_id": "PA-2",
+      "claim_type": "result",
+      "source_sentence": "一项虚构随机试验显示，在 50–75 岁确诊冠心病的患者中，丙方案与常规治疗相比使一年内心肌梗死发生率下降。",
+      "source_clause": "一项虚构随机试验显示，在 50–75 岁确诊冠心病的患者中，丙方案与常规治疗相比使一年内心肌梗死发生率下降。",
+      "population": "50–75岁确诊冠心病的患者",
+      "population_qualifiers": [
+        {
+          "type": "age_range",
+          "min_age": 50,
+          "max_age": 75,
+          "raw": "50–75岁"
+        }
+      ],
+      "intervention": "丙方案",
+      "comparator": "常规治疗",
+      "comparator_status": "comparison_phrase",
+      "outcome": "一年内心肌梗死发生率",
+      "outcome_concept": "cvd_event",
+      "outcome_class": "patient_important",
+      "direction": "favorable",
+      "evidential_force": "supports_benefit_claim",
+      "direction_note": "有害/偏高指标下降按有利方向解读",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "verb": "下降"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    },
+    {
+      "claim_id": "NB-1#C1",
+      "record_id": "NB-1",
+      "claim_type": "result",
+      "source_sentence": "在 18–40 岁轻度痤疮患者中，丁凝胶 0.1% 每日一次治疗 12 周可显著减少皮损数量。",
+      "source_clause": "在 18–40 岁轻度痤疮患者中，丁凝胶 0.1% 每日一次治疗 12 周可显著减少皮损数量。",
+      "population": "18–40岁轻度痤疮患者",
+      "population_qualifiers": [
+        {
+          "type": "age_range",
+          "min_age": 18,
+          "max_age": 40,
+          "raw": "18–40岁"
+        }
+      ],
+      "intervention": "丁凝胶",
+      "comparator": null,
+      "comparator_status": "not_specified",
+      "outcome": "皮损数量",
+      "outcome_concept": "skin_lesion",
+      "outcome_class": "symptom_or_function",
+      "direction": "favorable",
+      "evidential_force": "supports_benefit_claim",
+      "direction_note": "下降类结果按有利方向解读，需结合结局临床含义复核",
+      "effect_qualifiers": [
+        {
+          "type": "dose",
+          "value": "0.1%",
+          "raw": "0.1%"
+        },
+        {
+          "type": "frequency",
+          "value": "每日一次",
+          "raw": "每日一次"
+        },
+        {
+          "type": "follow_up",
+          "value": 12,
+          "unit": "周",
+          "raw": "12周"
+        }
+      ],
+      "confidence": "medium",
+      "extraction": {
+        "clause_index": 0,
+        "verb": "减少"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    },
+    {
+      "claim_id": "NL-1#C1",
+      "record_id": "NL-1",
+      "claim_type": "result",
+      "source_sentence": "在 70 岁以上衰弱老人中，戊补充剂对认知评分的影响与安慰剂相比未发现显著差异。",
+      "source_clause": "在 70 岁以上衰弱老人中，戊补充剂对认知评分的影响与安慰剂相比未发现显著差异。",
+      "population": "70岁以上衰弱老人",
+      "population_qualifiers": [
+        {
+          "type": "min_age",
+          "min_age": 70,
+          "raw": "70岁以上"
+        }
+      ],
+      "intervention": "戊补充剂",
+      "comparator": "安慰剂",
+      "comparator_status": "comparison_phrase",
+      "outcome": "认知评分",
+      "outcome_concept": "cognition",
+      "outcome_class": "symptom_or_function",
+      "direction": "no_significant_difference",
+      "evidential_force": "inconclusive_no_detected_difference",
+      "direction_note": "原文为未检出差异/证据不足：不能支持阳性功效，也不能改写为“证明无效”",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "null_phrase": "未发现显著差异"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    },
+    {
+      "claim_id": "NL-N1#C1",
+      "record_id": "NL-N1",
+      "claim_type": "result",
+      "source_sentence": "NL-1 会议批注：有人提出“既然未发现差异，就说明戊补充剂无效，应从所有建议中删除”；该表述需按证据规则复核。",
+      "source_clause": "NL-1 会议批注：有人提出“既然未发现差异，就说明戊补充剂无效，应从所有建议中删除”；",
+      "population": null,
+      "population_qualifiers": [],
+      "intervention": "戊补充剂",
+      "comparator": null,
+      "comparator_status": "not_specified",
+      "outcome": null,
+      "outcome_concept": null,
+      "outcome_class": "unknown",
+      "direction": "no_significant_difference",
+      "evidential_force": "inconclusive_no_detected_difference",
+      "direction_note": "原文为未检出差异/证据不足：不能支持阳性功效，也不能改写为“证明无效”",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "null_phrase": "未发现差异"
+      },
+      "source_verified": true,
+      "record_kind": "meeting_note"
+    },
+    {
+      "claim_id": "RT-1#C1",
+      "record_id": "RT-1",
+      "claim_type": "result",
+      "source_sentence": "己疫苗使 65 岁以上人群流感住院率下降。",
+      "source_clause": "己疫苗使 65 岁以上人群流感住院率下降。",
+      "population": "己疫苗使65岁以上人群",
+      "population_qualifiers": [
+        {
+          "type": "min_age",
+          "min_age": 65,
+          "raw": "65岁以上"
+        }
+      ],
+      "intervention": "己疫苗",
+      "comparator": null,
+      "comparator_status": "not_specified",
+      "outcome": "65岁以上人群流感住院率",
+      "outcome_concept": "hospitalization",
+      "outcome_class": "patient_important",
+      "direction": "favorable",
+      "evidential_force": "supports_benefit_claim",
+      "direction_note": "有害/偏高指标下降按有利方向解读",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "verb": "下降"
+      },
+      "source_verified": true,
+      "record_kind": "paper"
+    },
+    {
+      "claim_id": "RT-2#C1",
+      "record_id": "RT-2",
+      "claim_type": "efficacy_general",
+      "source_sentence": "撤稿声明：RT-1 因数据不可靠被期刊撤回，结论不再有效。",
+      "source_clause": "撤稿声明：RT-1 因数据不可靠被期刊撤回，结论不再有效。",
+      "population": null,
+      "population_qualifiers": [],
+      "intervention": null,
+      "comparator": null,
+      "comparator_status": "not_specified",
+      "outcome": null,
+      "outcome_concept": null,
+      "outcome_class": "unknown",
+      "direction": "favorable",
+      "evidential_force": "supports_benefit_claim",
+      "direction_note": "仅见概括性“有效”表述，未给出具体结局，需回查正文限定",
+      "effect_qualifiers": [],
+      "confidence": "medium",
+      "extraction": {
+        "clause_index": 0
+      },
+      "source_verified": true,
+      "record_kind": "retraction"
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": "NB-1",
+      "primary_record_id": "NB-1",
+      "member_record_ids": [
+        "NB-1"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": false
+    },
+    {
+      "trial_id": "NL-1",
+      "primary_record_id": "NL-1",
+      "member_record_ids": [
+        "NL-1"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": false
+    },
+    {
+      "trial_id": "PA-2",
+      "primary_record_id": "PA-2",
+      "member_record_ids": [
+        "PA-2"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": false
+    },
+    {
+      "trial_id": "RT-1",
+      "primary_record_id": "RT-1",
+      "member_record_ids": [
+        "RT-1"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": false
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "NB-M1",
+      "target_id": "NB-1",
+      "relation_type": "supplements",
+      "basis": "text_or_kind",
+      "evidence_sentence": "NB-1 的方法补充：纳入标准限定为 18–40 岁、轻度痤疮；丁凝胶剂量限定为 0.1% 每日一次，疗程 12 周。",
+      "confidence": "high",
+      "target_known": true
+    },
+    {
+      "source_id": "NL-N1",
+      "target_id": "NL-1",
+      "relation_type": "annotates",
+      "basis": "text_or_kind",
+      "evidence_sentence": "NL-1 会议批注：有人提出“既然未发现差异，就说明戊补充剂无效，应从所有建议中删除”；该表述需按证据规则复核。",
+      "confidence": "high",
+      "target_known": true
+    },
+    {
+      "source_id": "RT-2",
+      "target_id": "RT-1",
+      "relation_type": "retracts",
+      "basis": "text_or_kind",
+      "evidence_sentence": "撤稿声明：RT-1 因数据不可靠被期刊撤回，结论不再有效。",
+      "confidence": "high",
+      "target_known": true
+    }
+  ],
+  "status_events": [
+    {
+      "record_id": "RT-1",
+      "from_status": "active",
+      "to_status": "retracted",
+      "caused_by": "RT-2",
+      "relation_type": "retracts",
+      "evidence_sentence": "撤稿声明：RT-1 因数据不可靠被期刊撤回，结论不再有效。"
+    }
+  ],
+  "guidance_reviews": [
+    {
+      "guidance_id": "G-10",
+      "guidance_text": "50–75 岁确诊冠心病患者可使用丙方案降低心肌梗死风险。",
+      "parsed": {
+        "population": "50–75岁确诊冠心病患者",
+        "population_qualifiers": [
+          {
+            "type": "age_range",
+            "min_age": 50,
+            "max_age": 75,
+            "raw": "50–75岁"
+          }
+        ],
+        "intervention": "丙方案",
+        "outcome": "心肌梗死风险",
+        "outcome_concept": "cvd_event",
+        "outcome_class": "patient_important",
+        "desired_direction": "decrease",
+        "strength": "statement"
+      },
+      "suggested_action": "maintain",
+      "suggested_action_zh": "维持现行建议",
+      "needs_review": false,
+      "review_priority": null,
+      "reasons": [],
+      "checks": [
+        {
+          "code": "source_status_ok",
+          "status": "pass",
+          "title_zh": "来源状态正常",
+          "detail_zh": "支持记录当前均为 active（未见更正/撤回/关注声明）。"
+        },
+        {
+          "code": "independent_study_count",
+          "status": "info",
+          "title_zh": "独立研究计数",
+          "detail_zh": "回查到 1 条记录，归并为 1 项独立试验（PA-2）。",
+          "record_count": 1,
+          "independent_trial_count": 1,
+          "trial_ids": [
+            "PA-2"
+          ],
+          "follow_up_records": []
+        },
+        {
+          "code": "intervention_match",
+          "status": "pass",
+          "title_zh": "干预措施一致",
+          "detail_zh": "建议干预“丙方案”与证据干预 ['丙方案'] 可对应。"
+        },
+        {
+          "code": "population_applicability",
+          "status": "pass",
+          "title_zh": "人群范围可对应",
+          "detail_zh": "建议人群与证据纳入人群未发现额外限定冲突。",
+          "comparison": {
+            "aligned": true,
+            "gaps": [],
+            "evidence_populations": [
+              "50–75岁确诊冠心病的患者"
+            ],
+            "evidence_min_age": 50,
+            "evidence_max_age": 75,
+            "evidence_age_range": "50-75岁",
+            "extra_conditions": []
+          }
+        },
+        {
+          "code": "comparator_documented",
+          "status": "pass",
+          "title_zh": "比较条件已保留",
+          "detail_zh": "证据中的比较条件：常规治疗"
+        },
+        {
+          "code": "outcome_direct_evidence",
+          "status": "pass",
+          "title_zh": "存在同一结局的直接证据",
+          "detail_zh": "找到 1 条方向为有利的同结局主张。",
+          "claim_ids": [
+            "PA-2#C1"
+          ]
+        }
+      ],
+      "trace": {
+        "match_method": "intervention_text_match",
+        "seed_record_ids": [
+          "PA-2"
+        ],
+        "trial_ids": [
+          "PA-2"
+        ],
+        "member_record_ids": [
+          "PA-2"
+        ],
+        "dossier_record_ids": [],
+        "independent_study_count": 1,
+        "paths": [
+          {
+            "from": "G-10",
+            "to": "PA-2",
+            "via": "建议与主张对应同一干预“丙方案”（允许核心简称匹配）"
+          }
+        ]
+      },
+      "supporting_studies": [
+        {
+          "trial_id": "PA-2",
+          "primary_record_id": "PA-2",
+          "record_ids": [
+            "PA-2"
+          ],
+          "independent_study_count": 1,
+          "status": "active",
+          "claim_ids": [
+            "PA-2#C1"
+          ]
+        }
+      ],
+      "suggested_revision": null
+    },
+    {
+      "guidance_id": "G-11",
+      "guidance_text": "各年龄段痤疮人群均可使用丁凝胶改善皮损。",
+      "parsed": {
+        "population": "各年龄段痤疮人群",
+        "population_qualifiers": [],
+        "intervention": "丁凝胶",
+        "outcome": "皮损",
+        "outcome_concept": "skin_lesion",
+        "outcome_class": "symptom_or_function",
+        "desired_direction": "increase_or_improve",
+        "strength": "statement"
+      },
+      "suggested_action": "narrow",
+      "suggested_action_zh": "缩小适用范围/改写表述",
+      "needs_review": true,
+      "review_priority": "medium",
+      "reasons": [
+        {
+          "code": "population_scope_narrower",
+          "severity": "warn",
+          "message_zh": "证据年龄限定 18–40岁，建议未写明年限；证据上限为 40 岁，建议未写明该上限，超过 40 岁属于外推。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。"
+        },
+        {
+          "code": "dose_scope_narrower",
+          "severity": "warn",
+          "message_zh": "证据剂量限定为 ['0.1%', '每日一次']（限定来自 NB-M1），建议未写明对应剂量；公共建议必须带剂量与使用条件，不能泛化为任意用法。"
+        }
+      ],
+      "checks": [
+        {
+          "code": "source_status_ok",
+          "status": "pass",
+          "title_zh": "来源状态正常",
+          "detail_zh": "支持记录当前均为 active（未见更正/撤回/关注声明）。"
+        },
+        {
+          "code": "independent_study_count",
+          "status": "info",
+          "title_zh": "独立研究计数",
+          "detail_zh": "回查到 1 条记录，归并为 1 项独立试验（NB-1）。",
+          "record_count": 1,
+          "independent_trial_count": 1,
+          "trial_ids": [
+            "NB-1"
+          ],
+          "follow_up_records": []
+        },
+        {
+          "code": "intervention_match",
+          "status": "pass",
+          "title_zh": "干预措施一致",
+          "detail_zh": "建议干预“丁凝胶”与证据干预 ['丁凝胶'] 可对应。"
+        },
+        {
+          "code": "population_scope_narrower",
+          "status": "warn",
+          "title_zh": "证据人群比建议表述更窄",
+          "detail_zh": "证据年龄限定 18–40岁，建议未写明年限；证据上限为 40 岁，建议未写明该上限，超过 40 岁属于外推。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+          "comparison": {
+            "aligned": false,
+            "gaps": [
+              "证据年龄限定 18–40岁，建议未写明年限",
+              "证据上限为 40 岁，建议未写明该上限，超过 40 岁属于外推"
+            ],
+            "evidence_populations": [
+              "18–40岁轻度痤疮患者"
+            ],
+            "evidence_min_age": 18,
+            "evidence_max_age": 40,
+            "evidence_age_range": "18-40岁",
+            "extra_conditions": []
+          }
+        },
+        {
+          "code": "dose_scope_narrower",
+          "status": "warn",
+          "title_zh": "证据存在特定剂量/方案限定",
+          "detail_zh": "证据剂量限定为 ['0.1%', '每日一次']（限定来自 NB-M1），建议未写明对应剂量；公共建议必须带剂量与使用条件，不能泛化为任意用法。",
+          "evidence_doses": [
+            "0.1%",
+            "每日一次"
+          ],
+          "guidance_doses": []
+        },
+        {
+          "code": "comparator_not_reported",
+          "status": "info",
+          "title_zh": "比较条件原文未具体说明",
+          "detail_zh": "已如实标记为 not_specified；引用时不得替原文补造“安慰剂/常规治疗”等对照。"
+        },
+        {
+          "code": "outcome_direct_evidence",
+          "status": "pass",
+          "title_zh": "存在同一结局的直接证据",
+          "detail_zh": "找到 1 条方向为有利的同结局主张。",
+          "claim_ids": [
+            "NB-1#C1"
+          ]
+        }
+      ],
+      "trace": {
+        "match_method": "intervention_text_match",
+        "seed_record_ids": [
+          "NB-1"
+        ],
+        "trial_ids": [
+          "NB-1"
+        ],
+        "member_record_ids": [
+          "NB-1"
+        ],
+        "dossier_record_ids": [
+          "NB-M1"
+        ],
+        "independent_study_count": 1,
+        "paths": [
+          {
+            "from": "G-11",
+            "to": "NB-1",
+            "via": "建议与主张对应同一干预“丁凝胶”（允许核心简称匹配）"
+          },
+          {
+            "from": "NB-M1",
+            "to": "NB-1",
+            "via": "supplements：NB-1的方法补充：纳入标准限定为18–40岁、轻度痤疮；丁凝胶剂量限定为0.1%每日一次，疗程12周。",
+            "relation_type": "supplements"
+          }
+        ]
+      },
+      "supporting_studies": [
+        {
+          "trial_id": "NB-1",
+          "primary_record_id": "NB-1",
+          "record_ids": [
+            "NB-1"
+          ],
+          "independent_study_count": 1,
+          "status": "active",
+          "claim_ids": [
+            "NB-1#C1"
+          ]
+        }
+      ],
+      "suggested_revision": {
+        "narrowed_population": "18–40岁轻度痤疮患者",
+        "evidence_doses": [
+          "0.1%",
+          "每日一次"
+        ],
+        "surrogate_outcomes": [],
+        "unmeasured_target_outcome": false,
+        "draft_zh": "【重审草稿，非现行建议】适用人群应限定为：18–40岁轻度痤疮患者。剂量/频次应限定为：0.1%、每日一次。是否保留原公共建议，需学科审阅并取得直接结局证据后重新讨论。"
+      }
+    },
+    {
+      "guidance_id": "G-12",
+      "guidance_text": "推荐衰弱老人使用戊补充剂改善认知。",
+      "parsed": {
+        "population": "衰弱老人",
+        "population_qualifiers": [],
+        "intervention": "戊补充剂",
+        "outcome": "认知",
+        "outcome_concept": "cognition",
+        "outcome_class": "symptom_or_function",
+        "desired_direction": "increase_or_improve",
+        "strength": "strong"
+      },
+      "suggested_action": "reopen",
+      "suggested_action_zh": "重新讨论（必须重审）",
+      "needs_review": true,
+      "review_priority": "high",
+      "reasons": [
+        {
+          "code": "population_scope_narrower",
+          "severity": "warn",
+          "message_zh": "证据要求 70 岁及以上，建议仅使用宽泛人群表述“衰弱老人”。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。"
+        },
+        {
+          "code": "inconclusive_result_cannot_support_positive",
+          "severity": "block",
+          "message_zh": "未检出差异属于不确定证据，不能支持“降低风险”的阳性建议；同时也不得写成“证明无效”，应等待新证据并重新讨论。"
+        }
+      ],
+      "checks": [
+        {
+          "code": "source_status_ok",
+          "status": "pass",
+          "title_zh": "来源状态正常",
+          "detail_zh": "支持记录当前均为 active（未见更正/撤回/关注声明）。"
+        },
+        {
+          "code": "independent_study_count",
+          "status": "info",
+          "title_zh": "独立研究计数",
+          "detail_zh": "回查到 1 条记录，归并为 1 项独立试验（NL-1）。",
+          "record_count": 1,
+          "independent_trial_count": 1,
+          "trial_ids": [
+            "NL-1"
+          ],
+          "follow_up_records": []
+        },
+        {
+          "code": "intervention_match",
+          "status": "pass",
+          "title_zh": "干预措施一致",
+          "detail_zh": "建议干预“戊补充剂”与证据干预 ['戊补充剂'] 可对应。"
+        },
+        {
+          "code": "population_scope_narrower",
+          "status": "warn",
+          "title_zh": "证据人群比建议表述更窄",
+          "detail_zh": "证据要求 70 岁及以上，建议仅使用宽泛人群表述“衰弱老人”。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+          "comparison": {
+            "aligned": false,
+            "gaps": [
+              "证据要求 70 岁及以上，建议仅使用宽泛人群表述“衰弱老人”"
+            ],
+            "evidence_populations": [
+              "70岁以上衰弱老人"
+            ],
+            "evidence_min_age": 70,
+            "evidence_max_age": null,
+            "evidence_age_range": null,
+            "extra_conditions": []
+          }
+        },
+        {
+          "code": "comparator_documented",
+          "status": "pass",
+          "title_zh": "比较条件已保留",
+          "detail_zh": "证据中的比较条件：安慰剂"
+        },
+        {
+          "code": "inconclusive_result_cannot_support_positive",
+          "status": "block",
+          "title_zh": "同结局研究仅报告“未发现差异”",
+          "detail_zh": "未检出差异属于不确定证据，不能支持“降低风险”的阳性建议；同时也不得写成“证明无效”，应等待新证据并重新讨论。",
+          "claim_ids": [
+            "NL-1#C1"
+          ]
+        }
+      ],
+      "trace": {
+        "match_method": "intervention_text_match",
+        "seed_record_ids": [
+          "NL-1"
+        ],
+        "trial_ids": [
+          "NL-1"
+        ],
+        "member_record_ids": [
+          "NL-1"
+        ],
+        "dossier_record_ids": [
+          "NL-N1"
+        ],
+        "independent_study_count": 1,
+        "paths": [
+          {
+            "from": "G-12",
+            "to": "NL-1",
+            "via": "建议与主张对应同一干预“戊补充剂”（允许核心简称匹配）"
+          },
+          {
+            "from": "NL-N1",
+            "to": "NL-1",
+            "via": "annotates：NL-1会议批注：有人提出“既然未发现差异，就说明戊补充剂无效，应从所有建议中删除”；该表述需按证据规则复核。",
+            "relation_type": "annotates"
+          }
+        ]
+      },
+      "supporting_studies": [
+        {
+          "trial_id": "NL-1",
+          "primary_record_id": "NL-1",
+          "record_ids": [
+            "NL-1"
+          ],
+          "independent_study_count": 1,
+          "status": "active",
+          "claim_ids": [
+            "NL-1#C1"
+          ]
+        }
+      ],
+      "suggested_revision": {
+        "narrowed_population": "70岁以上衰弱老人",
+        "evidence_doses": [],
+        "surrogate_outcomes": [],
+        "unmeasured_target_outcome": false,
+        "draft_zh": "【重审草稿，非现行建议】适用人群应限定为：70岁以上衰弱老人。是否保留原公共建议，需学科审阅并取得直接结局证据后重新讨论。"
+      }
+    },
+    {
+      "guidance_id": "G-13",
+      "guidance_text": "建议 65 岁以上人群接种己疫苗以降低流感住院风险。",
+      "parsed": {
+        "population": "65岁以上人群",
+        "population_qualifiers": [
+          {
+            "type": "min_age",
+            "min_age": 65,
+            "raw": "65岁以上"
+          }
+        ],
+        "intervention": "接种己疫苗",
+        "outcome": "流感住院风险",
+        "outcome_concept": "hospitalization",
+        "outcome_class": "patient_important",
+        "desired_direction": "decrease",
+        "strength": "recommend"
+      },
+      "suggested_action": "reopen",
+      "suggested_action_zh": "重新讨论（必须重审）",
+      "needs_review": true,
+      "review_priority": "critical",
+      "reasons": [
+        {
+          "code": "source_retracted",
+          "severity": "block",
+          "message_zh": "RT-1（已被撤回）。撤回来源不能继续支撑现行建议，应立即从公共建议中撤下或暂停并重新讨论。"
+        }
+      ],
+      "checks": [
+        {
+          "code": "source_retracted",
+          "status": "block",
+          "title_zh": "支持研究已被撤回",
+          "detail_zh": "RT-1（已被撤回）。撤回来源不能继续支撑现行建议，应立即从公共建议中撤下或暂停并重新讨论。",
+          "impacted_records": [
+            [
+              "RT-1",
+              "retracted"
+            ]
+          ]
+        },
+        {
+          "code": "independent_study_count",
+          "status": "info",
+          "title_zh": "独立研究计数",
+          "detail_zh": "回查到 1 条记录，归并为 1 项独立试验（RT-1）。",
+          "record_count": 1,
+          "independent_trial_count": 1,
+          "trial_ids": [
+            "RT-1"
+          ],
+          "follow_up_records": []
+        },
+        {
+          "code": "intervention_match",
+          "status": "pass",
+          "title_zh": "干预措施一致",
+          "detail_zh": "建议干预“接种己疫苗”与证据干预 ['己疫苗'] 可对应。"
+        },
+        {
+          "code": "population_applicability",
+          "status": "pass",
+          "title_zh": "人群范围可对应",
+          "detail_zh": "建议人群与证据纳入人群未发现额外限定冲突。",
+          "comparison": {
+            "aligned": true,
+            "gaps": [],
+            "evidence_populations": [
+              "己疫苗使65岁以上人群"
+            ],
+            "evidence_min_age": 65,
+            "evidence_max_age": null,
+            "evidence_age_range": null,
+            "extra_conditions": []
+          }
+        },
+        {
+          "code": "comparator_not_reported",
+          "status": "info",
+          "title_zh": "比较条件原文未具体说明",
+          "detail_zh": "已如实标记为 not_specified；引用时不得替原文补造“安慰剂/常规治疗”等对照。"
+        },
+        {
+          "code": "outcome_direct_evidence",
+          "status": "pass",
+          "title_zh": "存在同一结局的直接证据",
+          "detail_zh": "找到 1 条方向为有利的同结局主张。",
+          "claim_ids": [
+            "RT-1#C1"
+          ]
+        }
+      ],
+      "trace": {
+        "match_method": "intervention_text_match",
+        "seed_record_ids": [
+          "RT-1"
+        ],
+        "trial_ids": [
+          "RT-1"
+        ],
+        "member_record_ids": [
+          "RT-1"
+        ],
+        "dossier_record_ids": [
+          "RT-2"
+        ],
+        "independent_study_count": 1,
+        "paths": [
+          {
+            "from": "G-13",
+            "to": "RT-1",
+            "via": "建议与主张对应同一干预“己疫苗”（允许核心简称匹配）"
+          },
+          {
+            "from": "RT-2",
+            "to": "RT-1",
+            "via": "retracts：撤稿声明：RT-1因数据不可靠被期刊撤回，结论不再有效。",
+            "relation_type": "retracts"
+          }
+        ]
+      },
+      "supporting_studies": [
+        {
+          "trial_id": "RT-1",
+          "primary_record_id": "RT-1",
+          "record_ids": [
+            "RT-1"
+          ],
+          "independent_study_count": 1,
+          "status": "retracted",
+          "claim_ids": [
+            "RT-1#C1"
+          ]
+        }
+      ],
+      "suggested_revision": null
+    }
+  ],
+  "re_review_queue": [
+    {
+      "guidance_id": "G-13",
+      "suggested_action": "reopen",
+      "review_priority": "critical",
+      "triggers": [
+        "source_retracted"
+      ],
+      "independent_study_count": 1,
+      "trial_ids": [
+        "RT-1"
+      ],
+      "member_record_ids": [
+        "RT-1"
+      ],
+      "dossier_record_ids": [
+        "RT-2"
+      ],
+      "top_reasons_zh": [
+        "RT-1（已被撤回）。撤回来源不能继续支撑现行建议，应立即从公共建议中撤下或暂停并重新讨论。"
+      ]
+    },
+    {
+      "guidance_id": "G-12",
+      "suggested_action": "reopen",
+      "review_priority": "high",
+      "triggers": [
+        "population_scope_narrower",
+        "inconclusive_result_cannot_support_positive"
+      ],
+      "independent_study_count": 1,
+      "trial_ids": [
+        "NL-1"
+      ],
+      "member_record_ids": [
+        "NL-1"
+      ],
+      "dossier_record_ids": [
+        "NL-N1"
+      ],
+      "top_reasons_zh": [
+        "证据要求 70 岁及以上，建议仅使用宽泛人群表述“衰弱老人”。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+        "未检出差异属于不确定证据，不能支持“降低风险”的阳性建议；同时也不得写成“证明无效”，应等待新证据并重新讨论。"
+      ]
+    },
+    {
+      "guidance_id": "G-11",
+      "suggested_action": "narrow",
+      "review_priority": "medium",
+      "triggers": [
+        "population_scope_narrower",
+        "dose_scope_narrower"
+      ],
+      "independent_study_count": 1,
+      "trial_ids": [
+        "NB-1"
+      ],
+      "member_record_ids": [
+        "NB-1"
+      ],
+      "dossier_record_ids": [
+        "NB-M1"
+      ],
+      "top_reasons_zh": [
+        "证据年龄限定 18–40岁，建议未写明年限；证据上限为 40 岁，建议未写明该上限，超过 40 岁属于外推。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+        "证据剂量限定为 ['0.1%', '每日一次']（限定来自 NB-M1），建议未写明对应剂量；公共建议必须带剂量与使用条件，不能泛化为任意用法。"
+      ]
+    }
+  ],
+  "wording_issues": [
+    {
+      "code": "null_result_as_proof_of_no_effect",
+      "severity": "high",
+      "source_id": "NL-N1",
+      "source_sentence": "NL-1 会议批注：有人提出“既然未发现差异，就说明戊补充剂无效，应从所有建议中删除”；该表述需按证据规则复核。",
+      "message_zh": "句子把“未发现差异/证据不足”与“无效”结论直接连接。未检出差异只说明现有证据不足以证明有效（inconclusive），不能改写为“证明无效”；无效应结论需要等效性检验或足够把握度的证据。",
+      "matched_phrase": "无效"
+    }
+  ],
+  "input_warnings": [],
+  "stats": {
+    "record_count": 7,
+    "claim_count": 6,
+    "trial_count": 4,
+    "independent_study_count_total": 4,
+    "guidance_count": 4,
+    "guidance_action_counts": {
+      "maintain": 1,
+      "narrow": 1,
+      "reopen": 2
+    },
+    "re_review_queue_size": 3,
+    "wording_issue_count": 1,
+    "unverified_source_sentences": []
+  }
+}

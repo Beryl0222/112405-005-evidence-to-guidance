@@ -1,0 +1,69 @@
+[
+  {
+    "guidance_id": "G-13",
+    "suggested_action": "reopen",
+    "review_priority": "critical",
+    "triggers": [
+      "source_retracted"
+    ],
+    "independent_study_count": 1,
+    "trial_ids": [
+      "RT-1"
+    ],
+    "member_record_ids": [
+      "RT-1"
+    ],
+    "dossier_record_ids": [
+      "RT-2"
+    ],
+    "top_reasons_zh": [
+      "RT-1（已被撤回）。撤回来源不能继续支撑现行建议，应立即从公共建议中撤下或暂停并重新讨论。"
+    ]
+  },
+  {
+    "guidance_id": "G-12",
+    "suggested_action": "reopen",
+    "review_priority": "high",
+    "triggers": [
+      "population_scope_narrower",
+      "inconclusive_result_cannot_support_positive"
+    ],
+    "independent_study_count": 1,
+    "trial_ids": [
+      "NL-1"
+    ],
+    "member_record_ids": [
+      "NL-1"
+    ],
+    "dossier_record_ids": [
+      "NL-N1"
+    ],
+    "top_reasons_zh": [
+      "证据要求 70 岁及以上，建议仅使用宽泛人群表述“衰弱老人”。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+      "未检出差异属于不确定证据，不能支持“降低风险”的阳性建议；同时也不得写成“证明无效”，应等待新证据并重新讨论。"
+    ]
+  },
+  {
+    "guidance_id": "G-11",
+    "suggested_action": "narrow",
+    "review_priority": "medium",
+    "triggers": [
+      "population_scope_narrower",
+      "dose_scope_narrower"
+    ],
+    "independent_study_count": 1,
+    "trial_ids": [
+      "NB-1"
+    ],
+    "member_record_ids": [
+      "NB-1"
+    ],
+    "dossier_record_ids": [
+      "NB-M1"
+    ],
+    "top_reasons_zh": [
+      "证据年龄限定 18–40岁，建议未写明年限；证据上限为 40 岁，建议未写明该上限，超过 40 岁属于外推。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+      "证据剂量限定为 ['0.1%', '每日一次']（限定来自 NB-M1），建议未写明对应剂量；公共建议必须带剂量与使用条件，不能泛化为任意用法。"
+    ]
+  }
+]

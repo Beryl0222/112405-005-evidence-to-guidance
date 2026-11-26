@@ -1,0 +1,30 @@
+[
+  {
+    "guidance_id": "G-3",
+    "suggested_action": "reopen",
+    "review_priority": "high",
+    "triggers": [
+      "source_corrected",
+      "population_scope_narrower",
+      "outcome_not_studied",
+      "surrogate_only_for_patient_outcome"
+    ],
+    "independent_study_count": 1,
+    "trial_ids": [
+      "AB-7"
+    ],
+    "member_record_ids": [
+      "AB-7",
+      "AB-8"
+    ],
+    "dossier_record_ids": [
+      "AB-9"
+    ],
+    "top_reasons_zh": [
+      "AB-7（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。",
+      "证据要求 60 岁及以上，建议仅使用宽泛人群表述“高龄人群”；证据还要求额外准入条件：基线指标偏高，建议未体现。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+      "建议目标结局“住院风险”在 AB-7 中被明确声明未测量/未报告；没有直接证据支持该公共建议，不能用其他指标的下降替代。",
+      "建议结局“住院风险”属于硬结局，而支持主张仅测量 替代指标 等替代指标；替代指标改善不等于住院/死亡等结局改善，应重新讨论或改写建议。"
+    ]
+  }
+]

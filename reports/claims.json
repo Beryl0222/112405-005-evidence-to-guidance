@@ -1,0 +1,75 @@
+[
+  {
+    "claim_id": "AB-7#C1",
+    "record_id": "AB-7",
+    "claim_type": "result",
+    "source_sentence": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；本研究未测量住院率。",
+    "source_clause": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；",
+    "population": "60岁以上且基线指标偏高的受试者",
+    "population_qualifiers": [
+      {
+        "type": "min_age",
+        "min_age": 60,
+        "raw": "60岁以上"
+      },
+      {
+        "type": "eligibility_condition",
+        "condition": "基线指标偏高",
+        "raw": "基线指标偏高"
+      }
+    ],
+    "intervention": "甲方案",
+    "comparator": null,
+    "comparator_status": "not_specified",
+    "outcome": "替代指标",
+    "outcome_concept": "surrogate_generic",
+    "outcome_class": "surrogate",
+    "direction": "favorable",
+    "evidential_force": "supports_benefit_claim",
+    "direction_note": "有害/偏高指标下降按有利方向解读",
+    "effect_qualifiers": [],
+    "confidence": "high",
+    "extraction": {
+      "clause_index": 0,
+      "verb": "下降"
+    },
+    "source_verified": true,
+    "record_kind": "abstract"
+  },
+  {
+    "claim_id": "AB-7#C2",
+    "record_id": "AB-7",
+    "claim_type": "outcome_not_measured",
+    "source_sentence": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；本研究未测量住院率。",
+    "source_clause": "本研究未测量住院率。",
+    "population": "60岁以上且基线指标偏高的受试者",
+    "population_qualifiers": [
+      {
+        "type": "min_age",
+        "min_age": 60,
+        "raw": "60岁以上"
+      },
+      {
+        "type": "eligibility_condition",
+        "condition": "基线指标偏高",
+        "raw": "基线指标偏高"
+      }
+    ],
+    "intervention": "甲方案",
+    "comparator": null,
+    "comparator_status": "not_specified",
+    "outcome": "住院率",
+    "outcome_concept": "hospitalization",
+    "outcome_class": "patient_important",
+    "direction": "not_assessed",
+    "evidential_force": "outcome_not_studied",
+    "direction_note": "原文明确说明该结局未被测量/报告，属于证据缺口而非阴性结果",
+    "effect_qualifiers": [],
+    "confidence": "high",
+    "extraction": {
+      "clause_index": 1
+    },
+    "source_verified": true,
+    "record_kind": "abstract"
+  }
+]

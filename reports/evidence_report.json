@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "case_id": "evidence-7",
+  "disclaimer": "本结果基于虚构合成文本生成，仅用于流程演练，不构成任何真实医疗建议。",
+  "records": [
+    {
+      "id": "AB-7",
+      "kind": "abstract",
+      "kind_normalized": "abstract",
+      "source": null,
+      "date": null,
+      "trial_id": "AB-7",
+      "status": "corrected",
+      "text": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；本研究未测量住院率。"
+    },
+    {
+      "id": "AB-8",
+      "kind": "follow-up-paper",
+      "kind_normalized": "follow_up",
+      "source": null,
+      "date": null,
+      "trial_id": "AB-7",
+      "status": "active",
+      "text": "AB-7 同一试验的 24 周随访分析，研究人群与对照组不变。"
+    },
+    {
+      "id": "AB-9",
+      "kind": "correction",
+      "kind_normalized": "correction",
+      "source": null,
+      "date": null,
+      "trial_id": "AB-9",
+      "status": "active",
+      "text": "编辑通知：AB-7 表格 2 的组别标签有误，期刊发布更正。"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "AB-7#C1",
+      "record_id": "AB-7",
+      "claim_type": "result",
+      "source_sentence": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；本研究未测量住院率。",
+      "source_clause": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；",
+      "population": "60岁以上且基线指标偏高的受试者",
+      "population_qualifiers": [
+        {
+          "type": "min_age",
+          "min_age": 60,
+          "raw": "60岁以上"
+        },
+        {
+          "type": "eligibility_condition",
+          "condition": "基线指标偏高",
+          "raw": "基线指标偏高"
+        }
+      ],
+      "intervention": "甲方案",
+      "comparator": null,
+      "comparator_status": "not_specified",
+      "outcome": "替代指标",
+      "outcome_concept": "surrogate_generic",
+      "outcome_class": "surrogate",
+      "direction": "favorable",
+      "evidential_force": "supports_benefit_claim",
+      "direction_note": "有害/偏高指标下降按有利方向解读",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 0,
+        "verb": "下降"
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    },
+    {
+      "claim_id": "AB-7#C2",
+      "record_id": "AB-7",
+      "claim_type": "outcome_not_measured",
+      "source_sentence": "在 60 岁以上且基线指标偏高的受试者中，甲方案使替代指标平均下降；本研究未测量住院率。",
+      "source_clause": "本研究未测量住院率。",
+      "population": "60岁以上且基线指标偏高的受试者",
+      "population_qualifiers": [
+        {
+          "type": "min_age",
+          "min_age": 60,
+          "raw": "60岁以上"
+        },
+        {
+          "type": "eligibility_condition",
+          "condition": "基线指标偏高",
+          "raw": "基线指标偏高"
+        }
+      ],
+      "intervention": "甲方案",
+      "comparator": null,
+      "comparator_status": "not_specified",
+      "outcome": "住院率",
+      "outcome_concept": "hospitalization",
+      "outcome_class": "patient_important",
+      "direction": "not_assessed",
+      "evidential_force": "outcome_not_studied",
+      "direction_note": "原文明确说明该结局未被测量/报告，属于证据缺口而非阴性结果",
+      "effect_qualifiers": [],
+      "confidence": "high",
+      "extraction": {
+        "clause_index": 1
+      },
+      "source_verified": true,
+      "record_kind": "abstract"
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": "AB-7",
+      "primary_record_id": "AB-7",
+      "member_record_ids": [
+        "AB-7",
+        "AB-8"
+      ],
+      "independent_study_count": 1,
+      "has_follow_up_analysis": true
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "AB-8",
+      "target_id": "AB-7",
+      "relation_type": "follow_up_of",
+      "basis": "text_or_kind",
+      "evidence_sentence": "AB-7 同一试验的 24 周随访分析，研究人群与对照组不变。",
+      "confidence": "high",
+      "target_known": true
+    },
+    {
+      "source_id": "AB-9",
+      "target_id": "AB-7",
+      "relation_type": "corrects",
+      "basis": "text_or_kind",
+      "evidence_sentence": "编辑通知：AB-7 表格 2 的组别标签有误，期刊发布更正。",
+      "confidence": "high",
+      "target_known": true
+    }
+  ],
+  "status_events": [
+    {
+      "record_id": "AB-7",
+      "from_status": "active",
+      "to_status": "corrected",
+      "caused_by": "AB-9",
+      "relation_type": "corrects",
+      "evidence_sentence": "编辑通知：AB-7 表格 2 的组别标签有误，期刊发布更正。"
+    }
+  ],
+  "guidance_reviews": [
+    {
+      "guidance_id": "G-3",
+      "guidance_text": "高龄人群可考虑甲方案降低住院风险。",
+      "parsed": {
+        "population": "高龄人群",
+        "population_qualifiers": [],
+        "intervention": "甲方案",
+        "outcome": "住院风险",
+        "outcome_concept": "hospitalization",
+        "outcome_class": "patient_important",
+        "desired_direction": "decrease",
+        "strength": "weak_consider"
+      },
+      "suggested_action": "reopen",
+      "suggested_action_zh": "重新讨论（必须重审）",
+      "needs_review": true,
+      "review_priority": "high",
+      "reasons": [
+        {
+          "code": "source_corrected",
+          "severity": "warn",
+          "message_zh": "AB-7（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。"
+        },
+        {
+          "code": "population_scope_narrower",
+          "severity": "warn",
+          "message_zh": "证据要求 60 岁及以上，建议仅使用宽泛人群表述“高龄人群”；证据还要求额外准入条件：基线指标偏高，建议未体现。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。"
+        },
+        {
+          "code": "outcome_not_studied",
+          "severity": "block",
+          "message_zh": "建议目标结局“住院风险”在 AB-7 中被明确声明未测量/未报告；没有直接证据支持该公共建议，不能用其他指标的下降替代。"
+        },
+        {
+          "code": "surrogate_only_for_patient_outcome",
+          "severity": "block",
+          "message_zh": "建议结局“住院风险”属于硬结局，而支持主张仅测量 替代指标 等替代指标；替代指标改善不等于住院/死亡等结局改善，应重新讨论或改写建议。"
+        }
+      ],
+      "checks": [
+        {
+          "code": "source_corrected",
+          "status": "warn",
+          "title_zh": "支持研究已被更正",
+          "detail_zh": "AB-7（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。",
+          "impacted_records": [
+            [
+              "AB-7",
+              "corrected"
+            ]
+          ]
+        },
+        {
+          "code": "independent_study_count",
+          "status": "info",
+          "title_zh": "独立研究计数",
+          "detail_zh": "回查到 2 条记录，归并为 1 项独立试验（AB-7）。 其中 AB-8 是同一试验的后续/随访分析，不能算作第二项独立研究。",
+          "record_count": 2,
+          "independent_trial_count": 1,
+          "trial_ids": [
+            "AB-7"
+          ],
+          "follow_up_records": [
+            "AB-8"
+          ]
+        },
+        {
+          "code": "intervention_match",
+          "status": "pass",
+          "title_zh": "干预措施一致",
+          "detail_zh": "建议干预“甲方案”与证据干预 ['甲方案'] 可对应。"
+        },
+        {
+          "code": "population_scope_narrower",
+          "status": "warn",
+          "title_zh": "证据人群比建议表述更窄",
+          "detail_zh": "证据要求 60 岁及以上，建议仅使用宽泛人群表述“高龄人群”；证据还要求额外准入条件：基线指标偏高，建议未体现。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+          "comparison": {
+            "aligned": false,
+            "gaps": [
+              "证据要求 60 岁及以上，建议仅使用宽泛人群表述“高龄人群”",
+              "证据还要求额外准入条件：基线指标偏高，建议未体现"
+            ],
+            "evidence_populations": [
+              "60岁以上且基线指标偏高的受试者"
+            ],
+            "evidence_min_age": 60,
+            "evidence_max_age": null,
+            "evidence_age_range": null,
+            "extra_conditions": [
+              "基线指标偏高"
+            ]
+          }
+        },
+        {
+          "code": "comparator_not_reported",
+          "status": "info",
+          "title_zh": "比较条件原文未具体说明",
+          "detail_zh": "已如实标记为 not_specified；引用时不得替原文补造“安慰剂/常规治疗”等对照。"
+        },
+        {
+          "code": "outcome_not_studied",
+          "status": "block",
+          "title_zh": "建议结局未被支持研究测量",
+          "detail_zh": "建议目标结局“住院风险”在 AB-7 中被明确声明未测量/未报告；没有直接证据支持该公共建议，不能用其他指标的下降替代。",
+          "claim_ids": [
+            "AB-7#C2"
+          ]
+        },
+        {
+          "code": "surrogate_only_for_patient_outcome",
+          "status": "block",
+          "title_zh": "只有替代指标证据，不能直接支持市民关心的结局",
+          "detail_zh": "建议结局“住院风险”属于硬结局，而支持主张仅测量 替代指标 等替代指标；替代指标改善不等于住院/死亡等结局改善，应重新讨论或改写建议。",
+          "claim_ids": [
+            "AB-7#C1"
+          ]
+        },
+        {
+          "code": "surrogate_direction_info",
+          "status": "info",
+          "title_zh": "替代指标主张（不可外推为硬结局）",
+          "detail_zh": "AB-7#C1：替代指标 → favorable。有害/偏高指标下降按有利方向解读",
+          "claim_id": "AB-7#C1"
+        }
+      ],
+      "trace": {
+        "match_method": "intervention_text_match",
+        "seed_record_ids": [
+          "AB-7"
+        ],
+        "trial_ids": [
+          "AB-7"
+        ],
+        "member_record_ids": [
+          "AB-7",
+          "AB-8"
+        ],
+        "dossier_record_ids": [
+          "AB-9"
+        ],
+        "independent_study_count": 1,
+        "paths": [
+          {
+            "from": "G-3",
+            "to": "AB-7",
+            "via": "建议与主张对应同一干预“甲方案”（允许核心简称匹配）"
+          },
+          {
+            "from": "AB-8",
+            "to": "AB-7",
+            "via": "follow_up_of：AB-7同一试验的24周随访分析，研究人群与对照组不变。",
+            "relation_type": "follow_up_of"
+          },
+          {
+            "from": "AB-9",
+            "to": "AB-7",
+            "via": "corrects：编辑通知：AB-7表格2的组别标签有误，期刊发布更正。",
+            "relation_type": "corrects"
+          }
+        ]
+      },
+      "supporting_studies": [
+        {
+          "trial_id": "AB-7",
+          "primary_record_id": "AB-7",
+          "record_ids": [
+            "AB-7",
+            "AB-8"
+          ],
+          "independent_study_count": 1,
+          "status": "corrected",
+          "claim_ids": [
+            "AB-7#C1",
+            "AB-7#C2"
+          ]
+        }
+      ],
+      "suggested_revision": {
+        "narrowed_population": "60岁以上且基线指标偏高的受试者",
+        "evidence_doses": [],
+        "surrogate_outcomes": [
+          "替代指标"
+        ],
+        "unmeasured_target_outcome": true,
+        "draft_zh": "【重审草稿，非现行建议】适用人群应限定为：60岁以上且基线指标偏高的受试者。甲方案在原始研究中仅观察到替代指标的有利变化，这些属于替代指标，不能外推为住院、死亡等市民关心的临床结局。原始研究明确未测量住院风险，不得声称其可降低住院风险。是否保留原公共建议，需学科审阅并取得直接结局证据后重新讨论。"
+      }
+    }
+  ],
+  "re_review_queue": [
+    {
+      "guidance_id": "G-3",
+      "suggested_action": "reopen",
+      "review_priority": "high",
+      "triggers": [
+        "source_corrected",
+        "population_scope_narrower",
+        "outcome_not_studied",
+        "surrogate_only_for_patient_outcome"
+      ],
+      "independent_study_count": 1,
+      "trial_ids": [
+        "AB-7"
+      ],
+      "member_record_ids": [
+        "AB-7",
+        "AB-8"
+      ],
+      "dossier_record_ids": [
+        "AB-9"
+      ],
+      "top_reasons_zh": [
+        "AB-7（已被更正）。更正可能改变效应量或组别解释，在学科审阅者核对更正内容前，该建议必须标记重审。",
+        "证据要求 60 岁及以上，建议仅使用宽泛人群表述“高龄人群”；证据还要求额外准入条件：基线指标偏高，建议未体现。若直接外推到全部宽泛人群属于过度概括，至少应缩小表述。",
+        "建议目标结局“住院风险”在 AB-7 中被明确声明未测量/未报告；没有直接证据支持该公共建议，不能用其他指标的下降替代。",
+        "建议结局“住院风险”属于硬结局，而支持主张仅测量 替代指标 等替代指标；替代指标改善不等于住院/死亡等结局改善，应重新讨论或改写建议。"
+      ]
+    }
+  ],
+  "wording_issues": [],
+  "input_warnings": [],
+  "stats": {
+    "record_count": 3,
+    "claim_count": 2,
+    "trial_count": 1,
+    "independent_study_count_total": 1,
+    "guidance_count": 1,
+    "guidance_action_counts": {
+      "maintain": 0,
+      "narrow": 0,
+      "reopen": 1
+    },
+    "re_review_queue_size": 1,
+    "wording_issue_count": 0,
+    "unverified_source_sentences": []
+  }
+}
